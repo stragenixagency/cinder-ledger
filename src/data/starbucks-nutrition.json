@@ -1,0 +1,2996 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "source": "Compiled from publicly known Starbucks nutrition figures. NOT scraped live from starbucks.com. Verify against Starbucks' official nutrition calculator before treating as authoritative — recipes and portions change periodically.",
+    "sizes_oz": {
+      "short": 8,
+      "tall": 12,
+      "grande": 16,
+      "venti_hot": 20,
+      "venti_iced": 24,
+      "trenta": 30
+    },
+    "lb_per_kcal": 0.0002857
+  },
+  "milks": [
+    {
+      "id": "whole",
+      "name": "Whole Milk",
+      "cal_per_cup": 150,
+      "protein_g_per_cup": 8,
+      "fat_g_per_cup": 8,
+      "carbs_g_per_cup": 12,
+      "sugar_g_per_cup": 12
+    },
+    {
+      "id": "2percent",
+      "name": "2% Milk",
+      "cal_per_cup": 122,
+      "protein_g_per_cup": 8,
+      "fat_g_per_cup": 5,
+      "carbs_g_per_cup": 12,
+      "sugar_g_per_cup": 12
+    },
+    {
+      "id": "nonfat",
+      "name": "Nonfat Milk",
+      "cal_per_cup": 80,
+      "protein_g_per_cup": 8,
+      "fat_g_per_cup": 0,
+      "carbs_g_per_cup": 12,
+      "sugar_g_per_cup": 12
+    },
+    {
+      "id": "oat",
+      "name": "Oatmilk",
+      "cal_per_cup": 120,
+      "protein_g_per_cup": 3,
+      "fat_g_per_cup": 5,
+      "carbs_g_per_cup": 16,
+      "sugar_g_per_cup": 7
+    },
+    {
+      "id": "almond",
+      "name": "Almondmilk",
+      "cal_per_cup": 60,
+      "protein_g_per_cup": 1,
+      "fat_g_per_cup": 2.5,
+      "carbs_g_per_cup": 8,
+      "sugar_g_per_cup": 7
+    },
+    {
+      "id": "soy",
+      "name": "Soymilk",
+      "cal_per_cup": 100,
+      "protein_g_per_cup": 6,
+      "fat_g_per_cup": 3.5,
+      "carbs_g_per_cup": 8,
+      "sugar_g_per_cup": 6
+    },
+    {
+      "id": "coconut",
+      "name": "Coconutmilk",
+      "cal_per_cup": 70,
+      "protein_g_per_cup": 0,
+      "fat_g_per_cup": 4.5,
+      "carbs_g_per_cup": 8,
+      "sugar_g_per_cup": 7
+    }
+  ],
+  "syrups": [
+    {
+      "id": "classic",
+      "name": "Classic Syrup",
+      "cal_per_pump": 20,
+      "sugar_g_per_pump": 5
+    },
+    {
+      "id": "vanilla",
+      "name": "Vanilla Syrup",
+      "cal_per_pump": 20,
+      "sugar_g_per_pump": 5
+    },
+    {
+      "id": "caramel",
+      "name": "Caramel Syrup",
+      "cal_per_pump": 20,
+      "sugar_g_per_pump": 5
+    },
+    {
+      "id": "hazelnut",
+      "name": "Hazelnut Syrup",
+      "cal_per_pump": 20,
+      "sugar_g_per_pump": 5
+    },
+    {
+      "id": "toffee_nut",
+      "name": "Toffee Nut Syrup",
+      "cal_per_pump": 20,
+      "sugar_g_per_pump": 5
+    },
+    {
+      "id": "peppermint",
+      "name": "Peppermint Syrup",
+      "cal_per_pump": 20,
+      "sugar_g_per_pump": 5
+    },
+    {
+      "id": "cinnamon_dolce",
+      "name": "Cinnamon Dolce Syrup",
+      "cal_per_pump": 20,
+      "sugar_g_per_pump": 5
+    },
+    {
+      "id": "brown_sugar",
+      "name": "Brown Sugar Syrup",
+      "cal_per_pump": 25,
+      "sugar_g_per_pump": 6
+    },
+    {
+      "id": "sugar_free_vanilla",
+      "name": "Sugar-Free Vanilla Syrup",
+      "cal_per_pump": 0,
+      "sugar_g_per_pump": 0
+    },
+    {
+      "id": "mocha_sauce",
+      "name": "Mocha Sauce",
+      "cal_per_pump": 25,
+      "sugar_g_per_pump": 4
+    },
+    {
+      "id": "white_mocha_sauce",
+      "name": "White Mocha Sauce",
+      "cal_per_pump": 45,
+      "sugar_g_per_pump": 5
+    }
+  ],
+  "addons": [
+    {
+      "id": "whipped_cream",
+      "name": "Whipped Cream",
+      "calories_by_size": {
+        "short": 50,
+        "tall": 60,
+        "grande": 70,
+        "venti": 90
+      }
+    },
+    {
+      "id": "cold_foam",
+      "name": "Cold Foam",
+      "calories_by_size": {
+        "tall": 25,
+        "grande": 35,
+        "venti": 45
+      }
+    },
+    {
+      "id": "sweet_cream_foam",
+      "name": "Sweet Cream Cold Foam",
+      "calories_by_size": {
+        "tall": 35,
+        "grande": 50,
+        "venti": 70
+      }
+    },
+    {
+      "id": "caramel_drizzle",
+      "name": "Caramel Drizzle",
+      "calories_by_size": {
+        "tall": 20,
+        "grande": 20,
+        "venti": 30
+      }
+    },
+    {
+      "id": "mocha_drizzle",
+      "name": "Mocha Drizzle",
+      "calories_by_size": {
+        "tall": 20,
+        "grande": 20,
+        "venti": 30
+      }
+    },
+    {
+      "id": "java_chips",
+      "name": "Java Chips",
+      "calories_by_size": {
+        "tall": 80,
+        "grande": 100,
+        "venti": 120
+      }
+    },
+    {
+      "id": "heavy_cream_splash",
+      "name": "Splash of Heavy Cream",
+      "calories_by_size": {
+        "tall": 25,
+        "grande": 25,
+        "venti": 25
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "id": "caffe_latte",
+      "name": "Caffè Latte",
+      "category": "espresso",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 150,
+          "sugar_g": 14,
+          "protein_g": 8,
+          "fat_g": 8,
+          "carbs_g": 14
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 130,
+          "sugar_g": 13,
+          "protein_g": 8,
+          "fat_g": 5,
+          "carbs_g": 13
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 100,
+          "sugar_g": 13,
+          "protein_g": 9,
+          "fat_g": 0,
+          "carbs_g": 13
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 130,
+          "sugar_g": 8,
+          "protein_g": 3,
+          "fat_g": 5,
+          "carbs_g": 16
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 90,
+          "sugar_g": 7,
+          "protein_g": 2,
+          "fat_g": 3,
+          "carbs_g": 8
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 120,
+          "sugar_g": 7,
+          "protein_g": 6,
+          "fat_g": 3.5,
+          "carbs_g": 9
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 120,
+          "sugar_g": 8,
+          "protein_g": 1,
+          "fat_g": 5,
+          "carbs_g": 9
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 210,
+          "sugar_g": 18,
+          "protein_g": 11,
+          "fat_g": 11,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 190,
+          "sugar_g": 18,
+          "protein_g": 12,
+          "fat_g": 7,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 150,
+          "sugar_g": 18,
+          "protein_g": 13,
+          "fat_g": 0,
+          "carbs_g": 19
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 190,
+          "sugar_g": 11,
+          "protein_g": 4,
+          "fat_g": 7,
+          "carbs_g": 23
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 130,
+          "sugar_g": 10,
+          "protein_g": 3,
+          "fat_g": 4,
+          "carbs_g": 12
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 170,
+          "sugar_g": 10,
+          "protein_g": 9,
+          "fat_g": 5,
+          "carbs_g": 13
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 170,
+          "sugar_g": 11,
+          "protein_g": 1,
+          "fat_g": 7,
+          "carbs_g": 12
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 280,
+          "sugar_g": 24,
+          "protein_g": 14,
+          "fat_g": 15,
+          "carbs_g": 24
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 250,
+          "sugar_g": 24,
+          "protein_g": 15,
+          "fat_g": 9,
+          "carbs_g": 24
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 200,
+          "sugar_g": 24,
+          "protein_g": 17,
+          "fat_g": 0,
+          "carbs_g": 25
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 250,
+          "sugar_g": 14,
+          "protein_g": 5,
+          "fat_g": 9,
+          "carbs_g": 30
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 170,
+          "sugar_g": 13,
+          "protein_g": 4,
+          "fat_g": 5,
+          "carbs_g": 16
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 220,
+          "sugar_g": 13,
+          "protein_g": 12,
+          "fat_g": 6,
+          "carbs_g": 17
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 220,
+          "sugar_g": 14,
+          "protein_g": 1,
+          "fat_g": 9,
+          "carbs_g": 16
+        }
+      ]
+    },
+    {
+      "id": "cappuccino",
+      "name": "Cappuccino",
+      "category": "espresso",
+      "has_iced": false,
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 120,
+          "sugar_g": 11,
+          "protein_g": 8,
+          "fat_g": 4.5,
+          "carbs_g": 12
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 65,
+          "sugar_g": 7,
+          "protein_g": 2,
+          "fat_g": 2,
+          "carbs_g": 9
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 75,
+          "sugar_g": 7,
+          "protein_g": 1,
+          "fat_g": 4,
+          "carbs_g": 9
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 85,
+          "sugar_g": 11,
+          "protein_g": 8,
+          "fat_g": 0,
+          "carbs_g": 12
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 120,
+          "sugar_g": 7,
+          "protein_g": 4,
+          "fat_g": 5,
+          "carbs_g": 15
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 100,
+          "sugar_g": 6,
+          "protein_g": 6,
+          "fat_g": 3,
+          "carbs_g": 9
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 145,
+          "sugar_g": 11,
+          "protein_g": 8,
+          "fat_g": 7,
+          "carbs_g": 12
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 80,
+          "sugar_g": 7,
+          "protein_g": 5,
+          "fat_g": 3,
+          "carbs_g": 7
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 45,
+          "sugar_g": 4,
+          "protein_g": 1,
+          "fat_g": 2,
+          "carbs_g": 5
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 50,
+          "sugar_g": 4,
+          "protein_g": 0,
+          "fat_g": 3,
+          "carbs_g": 5
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 55,
+          "sugar_g": 7,
+          "protein_g": 5,
+          "fat_g": 0,
+          "carbs_g": 7
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 80,
+          "sugar_g": 4,
+          "protein_g": 2,
+          "fat_g": 3,
+          "carbs_g": 9
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 65,
+          "sugar_g": 3,
+          "protein_g": 4,
+          "fat_g": 2,
+          "carbs_g": 5
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 95,
+          "sugar_g": 7,
+          "protein_g": 5,
+          "fat_g": 5,
+          "carbs_g": 7
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 150,
+          "sugar_g": 14,
+          "protein_g": 10,
+          "fat_g": 6,
+          "carbs_g": 15
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 80,
+          "sugar_g": 9,
+          "protein_g": 2,
+          "fat_g": 3,
+          "carbs_g": 11
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 95,
+          "sugar_g": 9,
+          "protein_g": 1,
+          "fat_g": 5,
+          "carbs_g": 11
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 105,
+          "sugar_g": 14,
+          "protein_g": 10,
+          "fat_g": 1,
+          "carbs_g": 15
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 150,
+          "sugar_g": 9,
+          "protein_g": 5,
+          "fat_g": 6,
+          "carbs_g": 19
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 125,
+          "sugar_g": 7,
+          "protein_g": 8,
+          "fat_g": 4,
+          "carbs_g": 11
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 180,
+          "sugar_g": 14,
+          "protein_g": 10,
+          "fat_g": 9,
+          "carbs_g": 15
+        }
+      ]
+    },
+    {
+      "id": "caramel_macchiato",
+      "name": "Caramel Macchiato",
+      "category": "espresso",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 250,
+          "sugar_g": 34,
+          "protein_g": 10,
+          "fat_g": 7,
+          "carbs_g": 35
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 195,
+          "sugar_g": 30,
+          "protein_g": 4,
+          "fat_g": 5,
+          "carbs_g": 32
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 205,
+          "sugar_g": 30,
+          "protein_g": 3,
+          "fat_g": 7,
+          "carbs_g": 32
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 215,
+          "sugar_g": 34,
+          "protein_g": 10,
+          "fat_g": 3,
+          "carbs_g": 35
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 250,
+          "sugar_g": 30,
+          "protein_g": 6,
+          "fat_g": 7,
+          "carbs_g": 38
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 230,
+          "sugar_g": 29,
+          "protein_g": 8,
+          "fat_g": 6,
+          "carbs_g": 32
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 275,
+          "sugar_g": 34,
+          "protein_g": 10,
+          "fat_g": 10,
+          "carbs_g": 35
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 190,
+          "sugar_g": 25,
+          "protein_g": 7,
+          "fat_g": 6,
+          "carbs_g": 26
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 155,
+          "sugar_g": 22,
+          "protein_g": 3,
+          "fat_g": 5,
+          "carbs_g": 24
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 160,
+          "sugar_g": 22,
+          "protein_g": 2,
+          "fat_g": 6,
+          "carbs_g": 24
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 165,
+          "sugar_g": 25,
+          "protein_g": 7,
+          "fat_g": 3,
+          "carbs_g": 26
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 190,
+          "sugar_g": 22,
+          "protein_g": 4,
+          "fat_g": 6,
+          "carbs_g": 28
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 175,
+          "sugar_g": 21,
+          "protein_g": 6,
+          "fat_g": 5,
+          "carbs_g": 24
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 205,
+          "sugar_g": 25,
+          "protein_g": 7,
+          "fat_g": 8,
+          "carbs_g": 26
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 320,
+          "sugar_g": 42,
+          "protein_g": 12,
+          "fat_g": 9,
+          "carbs_g": 44
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 250,
+          "sugar_g": 37,
+          "protein_g": 4,
+          "fat_g": 6,
+          "carbs_g": 40
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 265,
+          "sugar_g": 37,
+          "protein_g": 3,
+          "fat_g": 8,
+          "carbs_g": 40
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 275,
+          "sugar_g": 42,
+          "protein_g": 12,
+          "fat_g": 4,
+          "carbs_g": 44
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 320,
+          "sugar_g": 37,
+          "protein_g": 7,
+          "fat_g": 9,
+          "carbs_g": 48
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 295,
+          "sugar_g": 35,
+          "protein_g": 10,
+          "fat_g": 7,
+          "carbs_g": 40
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 350,
+          "sugar_g": 42,
+          "protein_g": 12,
+          "fat_g": 12,
+          "carbs_g": 44
+        }
+      ]
+    },
+    {
+      "id": "flat_white",
+      "name": "Flat White",
+      "category": "espresso",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 130,
+        "grande": 195
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 195,
+          "sugar_g": 18,
+          "protein_g": 12,
+          "fat_g": 9,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 145,
+          "sugar_g": 14,
+          "protein_g": 6,
+          "fat_g": 7,
+          "carbs_g": 15
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 150,
+          "sugar_g": 14,
+          "protein_g": 5,
+          "fat_g": 9,
+          "carbs_g": 15
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 160,
+          "sugar_g": 18,
+          "protein_g": 12,
+          "fat_g": 5,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 195,
+          "sugar_g": 14,
+          "protein_g": 8,
+          "fat_g": 9,
+          "carbs_g": 21
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 180,
+          "sugar_g": 13,
+          "protein_g": 10,
+          "fat_g": 8,
+          "carbs_g": 15
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 220,
+          "sugar_g": 18,
+          "protein_g": 12,
+          "fat_g": 12,
+          "carbs_g": 18
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 155,
+          "sugar_g": 14,
+          "protein_g": 9,
+          "fat_g": 7,
+          "carbs_g": 14
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 115,
+          "sugar_g": 11,
+          "protein_g": 5,
+          "fat_g": 6,
+          "carbs_g": 12
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 120,
+          "sugar_g": 11,
+          "protein_g": 4,
+          "fat_g": 7,
+          "carbs_g": 12
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 130,
+          "sugar_g": 14,
+          "protein_g": 9,
+          "fat_g": 4,
+          "carbs_g": 14
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 150,
+          "sugar_g": 11,
+          "protein_g": 6,
+          "fat_g": 7,
+          "carbs_g": 16
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 140,
+          "sugar_g": 10,
+          "protein_g": 8,
+          "fat_g": 6,
+          "carbs_g": 12
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 170,
+          "sugar_g": 14,
+          "protein_g": 9,
+          "fat_g": 9,
+          "carbs_g": 14
+        }
+      ]
+    },
+    {
+      "id": "americano",
+      "name": "Caffè Americano",
+      "category": "espresso",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "none",
+          "calories": 10,
+          "sugar_g": 0,
+          "protein_g": 1,
+          "fat_g": 0,
+          "carbs_g": 2
+        },
+        {
+          "size": "grande",
+          "milk": "none",
+          "calories": 15,
+          "sugar_g": 0,
+          "protein_g": 1,
+          "fat_g": 0,
+          "carbs_g": 3
+        },
+        {
+          "size": "venti",
+          "milk": "none",
+          "calories": 25,
+          "sugar_g": 0,
+          "protein_g": 1,
+          "fat_g": 0,
+          "carbs_g": 4
+        }
+      ]
+    },
+    {
+      "id": "white_chocolate_mocha",
+      "name": "White Chocolate Mocha",
+      "category": "espresso",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 405,
+          "sugar_g": 47,
+          "protein_g": 13,
+          "fat_g": 14,
+          "carbs_g": 51
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 355,
+          "sugar_g": 43,
+          "protein_g": 7,
+          "fat_g": 12,
+          "carbs_g": 48
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 360,
+          "sugar_g": 43,
+          "protein_g": 6,
+          "fat_g": 14,
+          "carbs_g": 48
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 370,
+          "sugar_g": 47,
+          "protein_g": 13,
+          "fat_g": 10,
+          "carbs_g": 51
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 405,
+          "sugar_g": 43,
+          "protein_g": 9,
+          "fat_g": 14,
+          "carbs_g": 54
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 390,
+          "sugar_g": 42,
+          "protein_g": 11,
+          "fat_g": 13,
+          "carbs_g": 48
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 430,
+          "sugar_g": 47,
+          "protein_g": 13,
+          "fat_g": 17,
+          "carbs_g": 51
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 305,
+          "sugar_g": 35,
+          "protein_g": 10,
+          "fat_g": 11,
+          "carbs_g": 38
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 265,
+          "sugar_g": 32,
+          "protein_g": 6,
+          "fat_g": 10,
+          "carbs_g": 36
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 270,
+          "sugar_g": 32,
+          "protein_g": 5,
+          "fat_g": 11,
+          "carbs_g": 36
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 280,
+          "sugar_g": 35,
+          "protein_g": 10,
+          "fat_g": 8,
+          "carbs_g": 38
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 300,
+          "sugar_g": 32,
+          "protein_g": 7,
+          "fat_g": 11,
+          "carbs_g": 40
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 290,
+          "sugar_g": 31,
+          "protein_g": 9,
+          "fat_g": 10,
+          "carbs_g": 36
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 320,
+          "sugar_g": 35,
+          "protein_g": 10,
+          "fat_g": 13,
+          "carbs_g": 38
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 530,
+          "sugar_g": 61,
+          "protein_g": 17,
+          "fat_g": 19,
+          "carbs_g": 66
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 460,
+          "sugar_g": 56,
+          "protein_g": 9,
+          "fat_g": 16,
+          "carbs_g": 62
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 470,
+          "sugar_g": 56,
+          "protein_g": 8,
+          "fat_g": 18,
+          "carbs_g": 62
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 485,
+          "sugar_g": 61,
+          "protein_g": 17,
+          "fat_g": 13,
+          "carbs_g": 66
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 525,
+          "sugar_g": 56,
+          "protein_g": 12,
+          "fat_g": 19,
+          "carbs_g": 70
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 505,
+          "sugar_g": 54,
+          "protein_g": 15,
+          "fat_g": 17,
+          "carbs_g": 62
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 560,
+          "sugar_g": 61,
+          "protein_g": 17,
+          "fat_g": 22,
+          "carbs_g": 66
+        }
+      ]
+    },
+    {
+      "id": "caffe_mocha",
+      "name": "Caffè Mocha",
+      "category": "espresso",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 80,
+        "grande": 175,
+        "venti": 260
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 335,
+          "sugar_g": 35,
+          "protein_g": 13,
+          "fat_g": 11,
+          "carbs_g": 44
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 285,
+          "sugar_g": 31,
+          "protein_g": 7,
+          "fat_g": 9,
+          "carbs_g": 41
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 290,
+          "sugar_g": 31,
+          "protein_g": 6,
+          "fat_g": 11,
+          "carbs_g": 41
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 300,
+          "sugar_g": 35,
+          "protein_g": 13,
+          "fat_g": 7,
+          "carbs_g": 44
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 335,
+          "sugar_g": 31,
+          "protein_g": 9,
+          "fat_g": 11,
+          "carbs_g": 47
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 320,
+          "sugar_g": 30,
+          "protein_g": 11,
+          "fat_g": 10,
+          "carbs_g": 41
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 360,
+          "sugar_g": 35,
+          "protein_g": 13,
+          "fat_g": 14,
+          "carbs_g": 44
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 275,
+          "sugar_g": 29,
+          "protein_g": 10,
+          "fat_g": 10,
+          "carbs_g": 34
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 235,
+          "sugar_g": 26,
+          "protein_g": 6,
+          "fat_g": 9,
+          "carbs_g": 32
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 240,
+          "sugar_g": 26,
+          "protein_g": 5,
+          "fat_g": 10,
+          "carbs_g": 32
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 250,
+          "sugar_g": 29,
+          "protein_g": 10,
+          "fat_g": 7,
+          "carbs_g": 34
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 270,
+          "sugar_g": 26,
+          "protein_g": 7,
+          "fat_g": 10,
+          "carbs_g": 36
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 260,
+          "sugar_g": 25,
+          "protein_g": 9,
+          "fat_g": 9,
+          "carbs_g": 32
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 290,
+          "sugar_g": 29,
+          "protein_g": 10,
+          "fat_g": 12,
+          "carbs_g": 34
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 440,
+          "sugar_g": 45,
+          "protein_g": 17,
+          "fat_g": 15,
+          "carbs_g": 57
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 370,
+          "sugar_g": 40,
+          "protein_g": 9,
+          "fat_g": 12,
+          "carbs_g": 53
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 380,
+          "sugar_g": 40,
+          "protein_g": 8,
+          "fat_g": 14,
+          "carbs_g": 53
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 395,
+          "sugar_g": 45,
+          "protein_g": 17,
+          "fat_g": 9,
+          "carbs_g": 57
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 435,
+          "sugar_g": 40,
+          "protein_g": 12,
+          "fat_g": 15,
+          "carbs_g": 61
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 415,
+          "sugar_g": 38,
+          "protein_g": 15,
+          "fat_g": 13,
+          "carbs_g": 53
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 470,
+          "sugar_g": 45,
+          "protein_g": 17,
+          "fat_g": 18,
+          "carbs_g": 57
+        }
+      ]
+    },
+    {
+      "id": "cold_brew",
+      "name": "Cold Brew",
+      "category": "coffee",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 155,
+        "grande": 205,
+        "venti": 310
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 0
+        },
+        {
+          "size": "grande",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 0
+        },
+        {
+          "size": "venti",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 0
+        }
+      ]
+    },
+    {
+      "id": "nitro_cold_brew",
+      "name": "Nitro Cold Brew",
+      "category": "coffee",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 215,
+        "grande": 280
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 1,
+          "fat_g": 0,
+          "carbs_g": 0
+        },
+        {
+          "size": "grande",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 1,
+          "fat_g": 0,
+          "carbs_g": 0
+        }
+      ]
+    },
+    {
+      "id": "pike_place_roast",
+      "name": "Pike Place Roast (Brewed Coffee)",
+      "category": "coffee",
+      "has_iced": false,
+      "caffeine_mg": {
+        "short": 180,
+        "tall": 235,
+        "grande": 310,
+        "venti": 410
+      },
+      "rows": [
+        {
+          "size": "short",
+          "milk": "none",
+          "calories": 3,
+          "sugar_g": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 0
+        },
+        {
+          "size": "tall",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 0
+        },
+        {
+          "size": "grande",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 0
+        },
+        {
+          "size": "venti",
+          "milk": "none",
+          "calories": 5,
+          "sugar_g": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 0
+        }
+      ]
+    },
+    {
+      "id": "caramel_frappuccino",
+      "name": "Caramel Frappuccino",
+      "category": "frappuccino",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 65,
+        "grande": 90,
+        "venti": 115
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 240,
+          "sugar_g": 35,
+          "protein_g": 3,
+          "fat_g": 8,
+          "carbs_g": 40
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 320,
+          "sugar_g": 47,
+          "protein_g": 4,
+          "fat_g": 10,
+          "carbs_g": 53
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 420,
+          "sugar_g": 62,
+          "protein_g": 5,
+          "fat_g": 13,
+          "carbs_g": 70
+        }
+      ]
+    },
+    {
+      "id": "mocha_frappuccino",
+      "name": "Mocha Frappuccino",
+      "category": "frappuccino",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 70,
+        "grande": 95,
+        "venti": 120
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 260,
+          "sugar_g": 38,
+          "protein_g": 4,
+          "fat_g": 9,
+          "carbs_g": 42
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 350,
+          "sugar_g": 51,
+          "protein_g": 5,
+          "fat_g": 12,
+          "carbs_g": 56
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 460,
+          "sugar_g": 66,
+          "protein_g": 6,
+          "fat_g": 15,
+          "carbs_g": 74
+        }
+      ]
+    },
+    {
+      "id": "java_chip_frappuccino",
+      "name": "Java Chip Frappuccino",
+      "category": "frappuccino",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 105,
+        "venti": 135
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 300,
+          "sugar_g": 40,
+          "protein_g": 4,
+          "fat_g": 12,
+          "carbs_g": 46
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 420,
+          "sugar_g": 54,
+          "protein_g": 5,
+          "fat_g": 17,
+          "carbs_g": 63
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 530,
+          "sugar_g": 68,
+          "protein_g": 6,
+          "fat_g": 21,
+          "carbs_g": 80
+        }
+      ]
+    },
+    {
+      "id": "vanilla_bean_creme_frappuccino",
+      "name": "Vanilla Bean Crème Frappuccino",
+      "category": "frappuccino",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 0,
+        "grande": 0,
+        "venti": 0
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 280,
+          "sugar_g": 42,
+          "protein_g": 3,
+          "fat_g": 9,
+          "carbs_g": 46
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 380,
+          "sugar_g": 57,
+          "protein_g": 4,
+          "fat_g": 12,
+          "carbs_g": 62
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 470,
+          "sugar_g": 70,
+          "protein_g": 5,
+          "fat_g": 15,
+          "carbs_g": 77
+        }
+      ]
+    },
+    {
+      "id": "strawberries_and_creme_frappuccino",
+      "name": "Strawberries & Crème Frappuccino",
+      "category": "frappuccino",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 0,
+        "grande": 0,
+        "venti": 0
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 280,
+          "sugar_g": 44,
+          "protein_g": 2,
+          "fat_g": 8,
+          "carbs_g": 48
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 370,
+          "sugar_g": 58,
+          "protein_g": 3,
+          "fat_g": 11,
+          "carbs_g": 64
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 460,
+          "sugar_g": 72,
+          "protein_g": 4,
+          "fat_g": 14,
+          "carbs_g": 80
+        }
+      ]
+    },
+    {
+      "id": "strawberry_acai_refresher",
+      "name": "Strawberry Açaí Starbucks Refresher",
+      "category": "refresher",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 35,
+        "grande": 45,
+        "venti": 70
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "water",
+          "calories": 60,
+          "sugar_g": 14,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 15
+        },
+        {
+          "size": "grande",
+          "milk": "water",
+          "calories": 80,
+          "sugar_g": 18,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 20
+        },
+        {
+          "size": "venti",
+          "milk": "water",
+          "calories": 110,
+          "sugar_g": 25,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 28
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 90,
+          "sugar_g": 17,
+          "protein_g": 0,
+          "fat_g": 1,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 130,
+          "sugar_g": 24,
+          "protein_g": 0,
+          "fat_g": 2,
+          "carbs_g": 25
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 160,
+          "sugar_g": 30,
+          "protein_g": 0,
+          "fat_g": 2,
+          "carbs_g": 32
+        }
+      ]
+    },
+    {
+      "id": "mango_dragonfruit_refresher",
+      "name": "Mango Dragonfruit Starbucks Refresher",
+      "category": "refresher",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 35,
+        "grande": 45,
+        "venti": 70
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "water",
+          "calories": 70,
+          "sugar_g": 16,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 17
+        },
+        {
+          "size": "grande",
+          "milk": "water",
+          "calories": 90,
+          "sugar_g": 21,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 22
+        },
+        {
+          "size": "venti",
+          "milk": "water",
+          "calories": 120,
+          "sugar_g": 27,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbs_g": 30
+        }
+      ]
+    },
+    {
+      "id": "pink_drink",
+      "name": "Pink Drink",
+      "category": "refresher",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 35,
+        "grande": 45,
+        "venti": 70
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 90,
+          "sugar_g": 16,
+          "protein_g": 0,
+          "fat_g": 1,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 140,
+          "sugar_g": 25,
+          "protein_g": 0,
+          "fat_g": 2,
+          "carbs_g": 27
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 190,
+          "sugar_g": 34,
+          "protein_g": 0,
+          "fat_g": 3,
+          "carbs_g": 37
+        }
+      ]
+    },
+    {
+      "id": "chai_tea_latte",
+      "name": "Chai Tea Latte",
+      "category": "tea",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 40,
+        "grande": 50,
+        "venti": 70
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 240,
+          "sugar_g": 38,
+          "protein_g": 7,
+          "fat_g": 4.5,
+          "carbs_g": 40
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 185,
+          "sugar_g": 34,
+          "protein_g": 1,
+          "fat_g": 2,
+          "carbs_g": 37
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 195,
+          "sugar_g": 34,
+          "protein_g": 0,
+          "fat_g": 4,
+          "carbs_g": 37
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 205,
+          "sugar_g": 38,
+          "protein_g": 7,
+          "fat_g": 0,
+          "carbs_g": 40
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 240,
+          "sugar_g": 34,
+          "protein_g": 3,
+          "fat_g": 5,
+          "carbs_g": 43
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 220,
+          "sugar_g": 33,
+          "protein_g": 5,
+          "fat_g": 3,
+          "carbs_g": 37
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 265,
+          "sugar_g": 38,
+          "protein_g": 7,
+          "fat_g": 7,
+          "carbs_g": 40
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 180,
+          "sugar_g": 28,
+          "protein_g": 5,
+          "fat_g": 3.5,
+          "carbs_g": 30
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 145,
+          "sugar_g": 25,
+          "protein_g": 1,
+          "fat_g": 2,
+          "carbs_g": 28
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 150,
+          "sugar_g": 25,
+          "protein_g": 0,
+          "fat_g": 3,
+          "carbs_g": 28
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 155,
+          "sugar_g": 28,
+          "protein_g": 5,
+          "fat_g": 1,
+          "carbs_g": 30
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 180,
+          "sugar_g": 25,
+          "protein_g": 2,
+          "fat_g": 4,
+          "carbs_g": 32
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 165,
+          "sugar_g": 24,
+          "protein_g": 4,
+          "fat_g": 3,
+          "carbs_g": 28
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 195,
+          "sugar_g": 28,
+          "protein_g": 5,
+          "fat_g": 5,
+          "carbs_g": 30
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 320,
+          "sugar_g": 50,
+          "protein_g": 9,
+          "fat_g": 6,
+          "carbs_g": 53
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 250,
+          "sugar_g": 45,
+          "protein_g": 1,
+          "fat_g": 3,
+          "carbs_g": 49
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 265,
+          "sugar_g": 45,
+          "protein_g": 0,
+          "fat_g": 5,
+          "carbs_g": 49
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 275,
+          "sugar_g": 50,
+          "protein_g": 9,
+          "fat_g": 1,
+          "carbs_g": 53
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 320,
+          "sugar_g": 45,
+          "protein_g": 4,
+          "fat_g": 6,
+          "carbs_g": 57
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 295,
+          "sugar_g": 43,
+          "protein_g": 7,
+          "fat_g": 4,
+          "carbs_g": 49
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 350,
+          "sugar_g": 50,
+          "protein_g": 9,
+          "fat_g": 9,
+          "carbs_g": 53
+        }
+      ]
+    },
+    {
+      "id": "matcha_green_tea_latte",
+      "name": "Matcha Green Tea Latte",
+      "category": "tea",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 55,
+        "grande": 80,
+        "venti": 110
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 255,
+          "sugar_g": 32,
+          "protein_g": 11,
+          "fat_g": 7,
+          "carbs_g": 36
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 205,
+          "sugar_g": 28,
+          "protein_g": 5,
+          "fat_g": 5,
+          "carbs_g": 33
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 210,
+          "sugar_g": 28,
+          "protein_g": 4,
+          "fat_g": 7,
+          "carbs_g": 33
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 220,
+          "sugar_g": 32,
+          "protein_g": 11,
+          "fat_g": 3,
+          "carbs_g": 36
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 255,
+          "sugar_g": 28,
+          "protein_g": 7,
+          "fat_g": 7,
+          "carbs_g": 39
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 240,
+          "sugar_g": 27,
+          "protein_g": 9,
+          "fat_g": 6,
+          "carbs_g": 33
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 280,
+          "sugar_g": 32,
+          "protein_g": 11,
+          "fat_g": 10,
+          "carbs_g": 36
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 205,
+          "sugar_g": 25,
+          "protein_g": 8,
+          "fat_g": 6,
+          "carbs_g": 28
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 165,
+          "sugar_g": 22,
+          "protein_g": 4,
+          "fat_g": 5,
+          "carbs_g": 26
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 170,
+          "sugar_g": 22,
+          "protein_g": 3,
+          "fat_g": 6,
+          "carbs_g": 26
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 180,
+          "sugar_g": 25,
+          "protein_g": 8,
+          "fat_g": 3,
+          "carbs_g": 28
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 200,
+          "sugar_g": 22,
+          "protein_g": 5,
+          "fat_g": 6,
+          "carbs_g": 30
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 190,
+          "sugar_g": 21,
+          "protein_g": 7,
+          "fat_g": 5,
+          "carbs_g": 26
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 220,
+          "sugar_g": 25,
+          "protein_g": 8,
+          "fat_g": 8,
+          "carbs_g": 28
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 360,
+          "sugar_g": 45,
+          "protein_g": 15,
+          "fat_g": 11,
+          "carbs_g": 50
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 290,
+          "sugar_g": 40,
+          "protein_g": 7,
+          "fat_g": 8,
+          "carbs_g": 46
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 300,
+          "sugar_g": 40,
+          "protein_g": 6,
+          "fat_g": 10,
+          "carbs_g": 46
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 315,
+          "sugar_g": 45,
+          "protein_g": 15,
+          "fat_g": 5,
+          "carbs_g": 50
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 355,
+          "sugar_g": 40,
+          "protein_g": 10,
+          "fat_g": 11,
+          "carbs_g": 54
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 335,
+          "sugar_g": 38,
+          "protein_g": 13,
+          "fat_g": 9,
+          "carbs_g": 46
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 390,
+          "sugar_g": 45,
+          "protein_g": 15,
+          "fat_g": 14,
+          "carbs_g": 50
+        }
+      ]
+    },
+    {
+      "id": "london_fog",
+      "name": "London Fog Tea Latte",
+      "category": "tea",
+      "has_iced": true,
+      "caffeine_mg": {
+        "tall": 40,
+        "grande": 65,
+        "venti": 95
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 180,
+          "sugar_g": 20,
+          "protein_g": 8,
+          "fat_g": 5,
+          "carbs_g": 21
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 125,
+          "sugar_g": 16,
+          "protein_g": 2,
+          "fat_g": 3,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 135,
+          "sugar_g": 16,
+          "protein_g": 1,
+          "fat_g": 5,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 145,
+          "sugar_g": 20,
+          "protein_g": 8,
+          "fat_g": 1,
+          "carbs_g": 21
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 180,
+          "sugar_g": 16,
+          "protein_g": 4,
+          "fat_g": 5,
+          "carbs_g": 24
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 160,
+          "sugar_g": 15,
+          "protein_g": 6,
+          "fat_g": 4,
+          "carbs_g": 18
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 205,
+          "sugar_g": 20,
+          "protein_g": 8,
+          "fat_g": 8,
+          "carbs_g": 21
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 130,
+          "sugar_g": 15,
+          "protein_g": 6,
+          "fat_g": 3.5,
+          "carbs_g": 16
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 95,
+          "sugar_g": 12,
+          "protein_g": 2,
+          "fat_g": 2,
+          "carbs_g": 14
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 100,
+          "sugar_g": 12,
+          "protein_g": 1,
+          "fat_g": 3,
+          "carbs_g": 14
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 105,
+          "sugar_g": 15,
+          "protein_g": 6,
+          "fat_g": 1,
+          "carbs_g": 16
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 130,
+          "sugar_g": 12,
+          "protein_g": 3,
+          "fat_g": 4,
+          "carbs_g": 18
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 115,
+          "sugar_g": 11,
+          "protein_g": 5,
+          "fat_g": 3,
+          "carbs_g": 14
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 145,
+          "sugar_g": 15,
+          "protein_g": 6,
+          "fat_g": 5,
+          "carbs_g": 16
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 230,
+          "sugar_g": 26,
+          "protein_g": 10,
+          "fat_g": 6,
+          "carbs_g": 27
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 160,
+          "sugar_g": 21,
+          "protein_g": 2,
+          "fat_g": 3,
+          "carbs_g": 23
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 175,
+          "sugar_g": 21,
+          "protein_g": 1,
+          "fat_g": 5,
+          "carbs_g": 23
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 185,
+          "sugar_g": 26,
+          "protein_g": 10,
+          "fat_g": 1,
+          "carbs_g": 27
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 230,
+          "sugar_g": 21,
+          "protein_g": 5,
+          "fat_g": 6,
+          "carbs_g": 31
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 205,
+          "sugar_g": 19,
+          "protein_g": 8,
+          "fat_g": 4,
+          "carbs_g": 23
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 260,
+          "sugar_g": 26,
+          "protein_g": 10,
+          "fat_g": 9,
+          "carbs_g": 27
+        }
+      ]
+    },
+    {
+      "id": "hot_chocolate",
+      "name": "Hot Chocolate",
+      "category": "other",
+      "has_iced": false,
+      "caffeine_mg": {
+        "tall": 15,
+        "grande": 20,
+        "venti": 25
+      },
+      "rows": [
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 335,
+          "sugar_g": 39,
+          "protein_g": 12,
+          "fat_g": 11,
+          "carbs_g": 45
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 285,
+          "sugar_g": 35,
+          "protein_g": 6,
+          "fat_g": 9,
+          "carbs_g": 42
+        },
+        {
+          "size": "grande",
+          "milk": "coconut",
+          "calories": 290,
+          "sugar_g": 35,
+          "protein_g": 5,
+          "fat_g": 11,
+          "carbs_g": 42
+        },
+        {
+          "size": "grande",
+          "milk": "nonfat",
+          "calories": 300,
+          "sugar_g": 39,
+          "protein_g": 12,
+          "fat_g": 7,
+          "carbs_g": 45
+        },
+        {
+          "size": "grande",
+          "milk": "oat",
+          "calories": 335,
+          "sugar_g": 35,
+          "protein_g": 8,
+          "fat_g": 11,
+          "carbs_g": 48
+        },
+        {
+          "size": "grande",
+          "milk": "soy",
+          "calories": 320,
+          "sugar_g": 34,
+          "protein_g": 10,
+          "fat_g": 10,
+          "carbs_g": 42
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 360,
+          "sugar_g": 39,
+          "protein_g": 12,
+          "fat_g": 14,
+          "carbs_g": 45
+        },
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 285,
+          "sugar_g": 32,
+          "protein_g": 10,
+          "fat_g": 10,
+          "carbs_g": 37
+        },
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 245,
+          "sugar_g": 29,
+          "protein_g": 6,
+          "fat_g": 9,
+          "carbs_g": 35
+        },
+        {
+          "size": "tall",
+          "milk": "coconut",
+          "calories": 250,
+          "sugar_g": 29,
+          "protein_g": 5,
+          "fat_g": 10,
+          "carbs_g": 35
+        },
+        {
+          "size": "tall",
+          "milk": "nonfat",
+          "calories": 260,
+          "sugar_g": 32,
+          "protein_g": 10,
+          "fat_g": 7,
+          "carbs_g": 37
+        },
+        {
+          "size": "tall",
+          "milk": "oat",
+          "calories": 280,
+          "sugar_g": 29,
+          "protein_g": 7,
+          "fat_g": 10,
+          "carbs_g": 39
+        },
+        {
+          "size": "tall",
+          "milk": "soy",
+          "calories": 270,
+          "sugar_g": 28,
+          "protein_g": 9,
+          "fat_g": 9,
+          "carbs_g": 35
+        },
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 300,
+          "sugar_g": 32,
+          "protein_g": 10,
+          "fat_g": 12,
+          "carbs_g": 37
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 400,
+          "sugar_g": 46,
+          "protein_g": 14,
+          "fat_g": 14,
+          "carbs_g": 54
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 330,
+          "sugar_g": 41,
+          "protein_g": 6,
+          "fat_g": 11,
+          "carbs_g": 50
+        },
+        {
+          "size": "venti",
+          "milk": "coconut",
+          "calories": 340,
+          "sugar_g": 41,
+          "protein_g": 5,
+          "fat_g": 13,
+          "carbs_g": 50
+        },
+        {
+          "size": "venti",
+          "milk": "nonfat",
+          "calories": 355,
+          "sugar_g": 46,
+          "protein_g": 14,
+          "fat_g": 8,
+          "carbs_g": 54
+        },
+        {
+          "size": "venti",
+          "milk": "oat",
+          "calories": 395,
+          "sugar_g": 41,
+          "protein_g": 9,
+          "fat_g": 14,
+          "carbs_g": 58
+        },
+        {
+          "size": "venti",
+          "milk": "soy",
+          "calories": 375,
+          "sugar_g": 39,
+          "protein_g": 12,
+          "fat_g": 12,
+          "carbs_g": 50
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 430,
+          "sugar_g": 46,
+          "protein_g": 14,
+          "fat_g": 17,
+          "carbs_g": 54
+        }
+      ]
+    },
+    {
+      "id": "pumpkin_spice_latte",
+      "name": "Pumpkin Spice Latte",
+      "category": "holiday",
+      "has_iced": true,
+      "everyday_equivalent": "caffe_latte",
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 250,
+          "sugar_g": 33,
+          "protein_g": 7,
+          "fat_g": 7,
+          "carbs_g": 38
+        },
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 380,
+          "sugar_g": 50,
+          "protein_g": 10,
+          "fat_g": 11,
+          "carbs_g": 57
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 490,
+          "sugar_g": 65,
+          "protein_g": 13,
+          "fat_g": 14,
+          "carbs_g": 73
+        }
+      ]
+    },
+    {
+      "id": "peppermint_mocha",
+      "name": "Peppermint Mocha",
+      "category": "holiday",
+      "has_iced": true,
+      "everyday_equivalent": "caffe_mocha",
+      "caffeine_mg": {
+        "tall": 80,
+        "grande": 175,
+        "venti": 260
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 290,
+          "sugar_g": 40,
+          "protein_g": 9,
+          "fat_g": 10,
+          "carbs_g": 43
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 370,
+          "sugar_g": 50,
+          "protein_g": 12,
+          "fat_g": 13,
+          "carbs_g": 54
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 470,
+          "sugar_g": 64,
+          "protein_g": 15,
+          "fat_g": 16,
+          "carbs_g": 69
+        }
+      ]
+    },
+    {
+      "id": "caramel_brulee_latte",
+      "name": "Caramel Brulée Latte",
+      "category": "holiday",
+      "has_iced": false,
+      "everyday_equivalent": "caramel_macchiato",
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "whole",
+          "calories": 280,
+          "sugar_g": 36,
+          "protein_g": 8,
+          "fat_g": 10,
+          "carbs_g": 40
+        },
+        {
+          "size": "grande",
+          "milk": "whole",
+          "calories": 370,
+          "sugar_g": 47,
+          "protein_g": 10,
+          "fat_g": 13,
+          "carbs_g": 52
+        },
+        {
+          "size": "venti",
+          "milk": "whole",
+          "calories": 470,
+          "sugar_g": 60,
+          "protein_g": 13,
+          "fat_g": 17,
+          "carbs_g": 66
+        }
+      ]
+    },
+    {
+      "id": "chestnut_praline_latte",
+      "name": "Chestnut Praline Latte",
+      "category": "holiday",
+      "has_iced": true,
+      "everyday_equivalent": "caffe_latte",
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "2percent",
+          "calories": 250,
+          "sugar_g": 32,
+          "protein_g": 8,
+          "fat_g": 8,
+          "carbs_g": 37
+        },
+        {
+          "size": "grande",
+          "milk": "2percent",
+          "calories": 340,
+          "sugar_g": 44,
+          "protein_g": 11,
+          "fat_g": 11,
+          "carbs_g": 50
+        },
+        {
+          "size": "venti",
+          "milk": "2percent",
+          "calories": 430,
+          "sugar_g": 55,
+          "protein_g": 14,
+          "fat_g": 14,
+          "carbs_g": 63
+        }
+      ]
+    },
+    {
+      "id": "sugar_cookie_almondmilk_latte",
+      "name": "Sugar Cookie Almondmilk Latte",
+      "category": "holiday",
+      "has_iced": true,
+      "everyday_equivalent": "caffe_latte",
+      "caffeine_mg": {
+        "tall": 75,
+        "grande": 150,
+        "venti": 225
+      },
+      "rows": [
+        {
+          "size": "tall",
+          "milk": "almond",
+          "calories": 200,
+          "sugar_g": 24,
+          "protein_g": 3,
+          "fat_g": 6,
+          "carbs_g": 31
+        },
+        {
+          "size": "grande",
+          "milk": "almond",
+          "calories": 260,
+          "sugar_g": 31,
+          "protein_g": 4,
+          "fat_g": 8,
+          "carbs_g": 40
+        },
+        {
+          "size": "venti",
+          "milk": "almond",
+          "calories": 340,
+          "sugar_g": 40,
+          "protein_g": 5,
+          "fat_g": 10,
+          "carbs_g": 52
+        }
+      ]
+    }
+  ],
+  "food": [
+    {
+      "id": "bacon_gouda_egg",
+      "name": "Bacon, Gouda & Egg Sandwich",
+      "category": "breakfast_sandwich",
+      "calories": 350,
+      "protein_g": 17,
+      "fat_g": 18,
+      "carbs_g": 32,
+      "sugar_g": 3
+    },
+    {
+      "id": "sausage_cheddar_egg",
+      "name": "Sausage, Cheddar & Egg Sandwich",
+      "category": "breakfast_sandwich",
+      "calories": 480,
+      "protein_g": 20,
+      "fat_g": 30,
+      "carbs_g": 33,
+      "sugar_g": 4
+    },
+    {
+      "id": "egg_white_red_pepper",
+      "name": "Egg White & Roasted Red Pepper Sandwich",
+      "category": "breakfast_sandwich",
+      "calories": 270,
+      "protein_g": 19,
+      "fat_g": 7,
+      "carbs_g": 33,
+      "sugar_g": 3
+    },
+    {
+      "id": "turkey_bacon_cheddar_egg_white",
+      "name": "Turkey Bacon, Cheddar & Egg White Sandwich",
+      "category": "breakfast_sandwich",
+      "calories": 230,
+      "protein_g": 16,
+      "fat_g": 6,
+      "carbs_g": 28,
+      "sugar_g": 3
+    },
+    {
+      "id": "ham_swiss_croissant",
+      "name": "Ham & Swiss Baked Croissant",
+      "category": "breakfast_sandwich",
+      "calories": 370,
+      "protein_g": 18,
+      "fat_g": 18,
+      "carbs_g": 34,
+      "sugar_g": 5
+    },
+    {
+      "id": "cake_pop",
+      "name": "Birthday Cake Pop",
+      "category": "pastry",
+      "calories": 150,
+      "protein_g": 1,
+      "fat_g": 7,
+      "carbs_g": 21,
+      "sugar_g": 16
+    },
+    {
+      "id": "butter_croissant",
+      "name": "Butter Croissant",
+      "category": "pastry",
+      "calories": 260,
+      "protein_g": 5,
+      "fat_g": 14,
+      "carbs_g": 29,
+      "sugar_g": 6
+    },
+    {
+      "id": "chocolate_croissant",
+      "name": "Chocolate Croissant",
+      "category": "pastry",
+      "calories": 300,
+      "protein_g": 6,
+      "fat_g": 16,
+      "carbs_g": 34,
+      "sugar_g": 13
+    },
+    {
+      "id": "blueberry_muffin",
+      "name": "Blueberry Muffin",
+      "category": "pastry",
+      "calories": 350,
+      "protein_g": 5,
+      "fat_g": 14,
+      "carbs_g": 51,
+      "sugar_g": 29
+    },
+    {
+      "id": "coffee_cake",
+      "name": "Iced Lemon Loaf Cake",
+      "category": "pastry",
+      "calories": 470,
+      "protein_g": 5,
+      "fat_g": 20,
+      "carbs_g": 68,
+      "sugar_g": 47
+    },
+    {
+      "id": "petite_vanilla_scone",
+      "name": "Petite Vanilla Bean Scone",
+      "category": "pastry",
+      "calories": 140,
+      "protein_g": 2,
+      "fat_g": 6,
+      "carbs_g": 20,
+      "sugar_g": 9
+    }
+  ]
+}
